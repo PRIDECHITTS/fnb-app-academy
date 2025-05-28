@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1 id="heading" onclick="toggleText()">JavaScript</h1>
+    <p id="addition"></p>
+
+    <script>
+        function toggleText() {
+            var heading = document.getElementById("heading");
+            if (heading.innerHTML === "JavaScript") {
+                heading.innerHTML = "Is awesome";
+            } else {
+                heading.innerHTML = "JavaScript";
+            }
+        }
+
+        function addNumbers(num1, num2) {
+            return num1 + num2;
+        }
+
+        document.getElementById("addition").innerHTML = addNumbers(10, 20);
+    </script>
+</body>
+</html>

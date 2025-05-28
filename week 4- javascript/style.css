@@ -1,0 +1,34 @@
+/* Dropdown container */
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+/* Dropdown select element */
+.dropdown select {
+  width: 120px;
+  padding: 5px;
+  border: 2px solid blue; /* Blue border */
+  border-radius: 5px;
+  background-color: white; /* White background */
+  color: black;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  appearance: none;
+  cursor: pointer;
+}
+
+/* Custom arrow */
+.dropdown::after {
+  content: '▲▼'; /* Up and down arrows */
+  font-size: 14px;
+  color: white; /* White arrows */
+  background-color: blue; /* Blue background */
+  padding: 5px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  border-radius: 3px;
+}
